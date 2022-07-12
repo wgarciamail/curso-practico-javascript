@@ -1,2 +1,2 @@
-# curso-practico-javascript
-Ejemplos practicos para javascript
+# Curso práctico de Javascript
+Ejemplos prácticos para javascript.
