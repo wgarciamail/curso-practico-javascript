@@ -37,9 +37,11 @@ body {
     width: 30%;
     margin: 10px;
     box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .card h2 {
     font-size: var(--lg);
+    text-align: center;
 }
 .figuras-form{
     display: flex;
