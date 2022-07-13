@@ -41,14 +41,14 @@ function calcularPerimetroCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
     const perimetro = perimetroCuadrado(value);
-    document.getElementById("result").innerHTML = perimetro;
+    document.getElementById("result").innerHTML = `${perimetro} cm`;
 }
 
 function calcularAreaCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
     const area = areaCuadrado(value);
-    document.getElementById("result").innerHTML = area;
+    document.getElementById("result").innerHTML = `${area} cm2`;
 
 }
 //#endregion Cuadrado
@@ -59,18 +59,14 @@ function calcularPerimetroTriangulo() {
     const lado2 = document.getElementById("LadoTriangulo2").value;
     const base = document.getElementById("BaseTriangulo").value;
     const perimetro = perimetroTriangulo(lado1, lado2, base);
-    const areaResult = document.getElementById("result");
-    areaResult.innerHTML = perimetro
-    //alert(perimetro);
+    document.getElementById("result").innerHTML = `${perimetro} cm`;
 }
 
 function calcularAreaTriangulo() {
     const base = document.getElementById("BaseTriangulo").value;
     const altura = document.getElementById("AlturaTriangulo").value;
     const area = areaTriangulo(base, altura);
-    const areaResult = document.getElementById("result");
-    areaResult.innerHTML = area
-    //alert(area);
+    document.getElementById("result").innerHTML = `${area} cm2`;
 }
 //#endregion Triangulo
 
@@ -78,15 +74,12 @@ function calcularAreaTriangulo() {
 function calcularPerimetroCirculo() {
     const radio = document.getElementById("radio").value;
     const perimetro = perimetrosCirculo(radio);
-    const areaResult = document.getElementById("result");
-    areaResult.innerHTML = perimetro
-
+    document.getElementById("result").innerHTML = `${perimetro} cm`;
 }
 
 function calcularAreaCirculo() {
     const radio = document.getElementById("radio").value;
     const area = areaCirculo(radio);
-    const areaResult = document.getElementById("result");
-    areaResult.innerHTML = area
+    document.getElementById("result").innerHTML = `${area} cm2`;
 }
 //#endregion Triangulo
